@@ -41,11 +41,12 @@ alias db='ddev auth ssh && ddev pull pantheon --skip-files -y'
 # Ddev.
 # Stop all running instances.
 # Start project.
+# Composer install.
 # Drush cr, cim.
 # Open code.
 # Open gittower.
 # Open site in browser.
-alias rs='git pull && ddev powerdown && ddev start && ddev drush cr && ddev drush cim -y && code . && gittower . && ddev launch'
+alias rs='git pull && ddev powerdown && ddev start && ddev composer install && ddev drush cr && ddev drush cim -y && code . && gittower . && ddev launch'
 
 # Wordpress cli.
 # Composer require wp-cli/wp-cli.
