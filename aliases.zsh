@@ -46,7 +46,8 @@ alias db='ddev auth ssh && ddev pull pantheon --skip-files -y'
 # Open code.
 # Open gittower.
 # Open site in browser.
-alias rs='git pull && ddev powerdown && ddev start && ddev composer install && ddev drush cr && ddev drush cim -y && code . && gittower . && ddev launch'
+alias rsd='git pull && ddev powerdown && ddev start && ddev composer install && ddev drush cr && ddev drush cim -y && code . && gittower . && ddev launch'
+alias rsw='git pull && ddev powerdown && ddev start && ddev composer install && code . && gittower . && ddev launch'
 
 # Wordpress cli.
 # Composer require wp-cli/wp-cli.
