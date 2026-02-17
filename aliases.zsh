@@ -3,12 +3,14 @@
 # Custom aliases.
 projects="$HOME/Projects"
 
+# Claude ai.
+alias c=claude
+
 # Launcher.
 # https://github.com/kazajhodo/launcher
 alias l="$projects/launcher/launcher.sh"
 
 # Sequelpro-Pantheon.
-# https://github.com/kazajhodo/sequelpro-pantheon
 alias psql="$projects/sequelpro-pantheon/connect.sh"
 
 # Launcher.
@@ -20,7 +22,7 @@ alias le="code $projects/launcher && gittower $projects/launcher"
 alias p="cd $projects && cd $1"
 
 # Terminus.
-# brew install --cask termius
+# brew install terminus
 alias t='terminus dashboard'
 
 # Git
@@ -37,6 +39,9 @@ alias s='ddev drush sapi-c && ddev drush sapi-i'
 # Pull Pantheon site db.
 # Also can use ddev db -f.
 alias db='ddev auth ssh && ddev pull pantheon --skip-files -y'
+
+# Drush aliases for ddev.
+alias cr='ddev drush cr'
 
 # Ddev.
 # Stop all running instances.
